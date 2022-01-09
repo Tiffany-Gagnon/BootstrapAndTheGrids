@@ -62,8 +62,24 @@
 </nav>
 
     <main class="flex-shrink-0">
-       <div class="container">
-           
+       <div class="container minHeight h-100"> <!--h-100 must be present for minheight to work?-->
+           <div class="row row-cols-1 row-cols-md-2 gy-2 h-100"> <!--Row must always wrap columns-->
+            <!--row-cols class can control what number of columns can be presented at certain breakpoints. Here we have the columns
+            stack to one for phones (sm breakpoints) and then go back to two columns for everything above that (md breakpoints and above)
+            gy-* allows for making a gutter between the top and bottom row for the sm breakpoint row-col-->
+                <div class="col">
+                    <div class="bg-dark text-light h-100 p-2">
+                        <h1>COL ONE</h1>
+                        <p><p>Lorem ipsum dolor sit amet. Ex molestias necessitatibus <strong>Ut dignissimos ab dolorum tempora et necessitatibus atque</strong> sit excepturi aperiam non suscipit amet eos sapiente aspernatur. Eos atque eius <em>Et tempora est dolores laboriosam qui animi quasi</em>. Ut alias explicabo ut Quis voluptatum sed vitae iste. Non dolorem nemo non animi fugit in suscipit incidunt. </p><p>Ut tenetur quod cum corporis quae <em>Sed eaque rem quasi illo et saepe accusamus  nobis molestiae</em>. Sed tenetur corrupti non omnis voluptas non nostrum voluptatem non sint minus! 33 perferendis dolorem et placeat deleniti est necessitatibus consectetur! </p><p>Ut maiores voluptatem in odit eius et accusamus porro et inventore quidem. Et nisi voluptatibus <em>Non autem vel officiis doloremque est enim quam</em> qui modi fugit aut accusamus quis. </p>
+                    </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="bg-secondary text-light h-100 p-2">
+                        <h1>COL TWO</h1>
+                    </div>
+                </div>
+           </div>
        </div>
     </main>
     <footer class="footer mt-auto py-3 bg-dark sticky-footer">
