@@ -62,8 +62,27 @@
 </nav>
 
     <main class="flex-shrink-0">
-       <div class="container">
-           
+       <div class="container h-100 minHeight">
+           <div class="row row-cols-1 row-cols-md-3 gy-2 h-100">
+               <!--order-last in row when on mobile but will move back to first when on larger breakpoint-->
+               <div class="col col-md-3 order-last order-md-first"> <!--Define what the column width is when on desktop but will have everything stack the same width on mobile-->
+                   <div class="bg-secondary text-dark  h-100 p-2">
+                       Col One
+                   </div>
+               </div>
+               <div class="col col-md-6"> <!--Define what the column width is when on desktop but will have everything stack the same width on mobile-->
+                    <div class="bg-dark text-light h-100 p-2">
+                        Col Two
+                    </div>
+                </div>
+                <!--order first in row when on mobile but switch to last when on larger breakpoint-->
+                <div class="col-md-3 order-first order-md-last"> <!--Define what the column width is when on desktop but will have everything stack the same width on mobile-->
+                    <div class="bg-secondary text-dark h-100 p-2">
+                        Col Three
+                    </div>
+                </div>
+
+           </div>
        </div>
     </main>
     <footer class="footer mt-auto py-3 bg-dark sticky-footer">
