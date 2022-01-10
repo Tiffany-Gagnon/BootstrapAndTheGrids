@@ -62,9 +62,30 @@
 </nav>
 
     <main class="flex-shrink-0">
-       <div class="container">
-           
-       </div>
+        <div class="container-fluid h-100 minHeight"> <!--Container fluid allows for the container to fill 100% of the screen at all resolutions-->
+            <div class="row row-cols-1 row-cols-md-2 h-100 gy-2">
+                <div class="col col-md-12"> <!--col-12 is a way to have two rows without creating two seperate rows-->
+                    <div class="bg-secondary text-light h-100">
+                        Column One
+                    </div>
+                </div>
+                <div class="col col-md-4 order-last">
+                     <div class="bg-dark text-light h-100">
+                         Column Two-but ordered last
+                     </div>
+                 </div>
+                 <div class="col col-md-4">
+                     <div class="bg-secondary text-light h-100">
+                         Column Three
+                     </div>
+                 </div>
+                 <div class="col col-md-4"> <!--Copied container setup from grid 7 and added another column; changed breakpoints to 4 instead of 6-->
+                     <div class="bg-secondary text-light h-100">
+                         Column Three
+                     </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="footer mt-auto py-3 bg-dark sticky-footer">
         <div class="container-fluid text-center">
