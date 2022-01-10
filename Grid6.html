@@ -62,8 +62,46 @@
 </nav>
 
     <main class="flex-shrink-0">
-       <div class="container">
-           
+       <div class="container h-100 minHeight">
+           <!-- EXAMPLE ONE BUILT WITH TWO ROWS INSTEAD OF ONE
+           <div class="row h-50">
+               <div class="col">
+                   <div class="bg-secondary text-dark p-2 h-100">
+                       Column One
+                   </div>
+               </div>
+           </div>
+           <div class="row h-50 mt-2">
+                <div class="col order-last">
+                    <div class="bg-dark text-light p-2 h-100">
+                        Column Two- but ordered last
+                    </div>
+                </div>
+                <div class="col order-first">
+                    <div class="bg-secondary text-dark p-2 h-100">
+                        Column Three
+                    </div>
+                </div>
+           </div> -->
+
+           <!--EXAMPLE WITH ONE ROW ONLY-->
+           <div class="row row-cols-1 row-cols-md-2 h-100 gy-2">
+               <div class="col col-md-12"> <!--col-12 is a way to have two rows without creating two seperate rows-->
+                   <div class="bg-secondary text-light h-100">
+                       Column One
+                   </div>
+               </div>
+               <div class="col col-md-6 order-last">
+                    <div class="bg-dark text-light h-100">
+                        Column Two-but ordered last
+                    </div>
+                </div>
+                <div class="col col-md-6">
+                    <div class="bg-secondary text-light h-100">
+                        Column Three
+                    </div>
+                </div>
+           </div>
        </div>
     </main>
     <footer class="footer mt-auto py-3 bg-dark sticky-footer">
