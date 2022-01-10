@@ -63,15 +63,15 @@
 
     <main class="flex-shrink-0">
        <div class="container h-100 minHeight d-flex flex-column">
-           <!--NAVIGATION PILLS AT TOP OF GRID-->
-           <ul class="nav nav-pills mb-1">
-                <li class="nav-item">
-                    <a href="Grid3.html" class="nav-link active" aria-current="page">Grid 3</a> <!--GRID 3 CURRENTLY ACTIVE-->
-                </li>
-                <li class="nav-item">
-                    <a href="Grid3b.html" class="nav-link">Grid 3b</a>
-                </li>
-           </ul>
+        <!--NAVIGATION PILLS AT TOP OF GRID-->
+        <ul class="nav nav-pills mb-1">
+            <li class="nav-item">
+                <a href="Grid3.html" class="nav-link">Grid 3</a>
+            </li>
+            <li class="nav-item">
+                <a href="Grid3b.html" class="nav-link active" aria-current="page">Grid 3b</a> <!--GRID 3b CURRENTLY ACTIVE-->
+            </li>
+       </ul>
            <div class="row h-100">
                <!--LEFT COLUMN-->
                <div class="col-7">
@@ -81,30 +81,35 @@
                         <p>Lorem ipsum dolor sit amet. Qui minima quia qui rerum voluptates qui tempora necessitatibus qui  repudiandae eum dolorem veniam et architecto Quis. Aut rerum aliquid et sapiente consequatur quo internos velit et minus quis hic officia autem. </p>
                         <p>Lorem ipsum dolor sit amet. Qui minima quia qui rerum voluptates qui tempora necessitatibus qui  repudiandae eum dolorem veniam et architecto Quis. Aut rerum aliquid et sapiente consequatur quo internos velit et minus quis hic officia autem. </p>
                         <p>Lorem ipsum dolor sit amet. Qui minima quia qui rerum voluptates qui tempora necessitatibus qui  repudiandae eum dolorem veniam et architecto Quis. Aut rerum aliquid et sapiente consequatur quo internos velit et minus quis hic officia autem. </p>
-
-                   </div>
+                    </div>
                </div>
                <!--RIGHT COLUMN-->
-               <div class="col-5 h-100 d-flex flex-column justify-content-evenly"> <!--Flex column and justify content evenly fits content
-                        evenly wiht button in the right column-->
+               <div class="col-5"> 
                    <!--RIGHT TOP COLUMN-->
-                   <div class="bg-dark text-light h-50 p-2 overflow-auto"> <!--overflow auto allows for auomatic scroll bar when content overflows-->
-                        <p>Lorem ipsum dolor sit amet. Qui minima quia qui rerum voluptates qui tempora necessitatibus qui  repudiandae eum dolorem veniam et architecto Quis. Aut rerum aliquid et sapiente consequatur quo internos velit et minus quis hic officia autem. </p>
-                        <p>Lorem ipsum dolor sit amet. Qui minima quia qui rerum voluptates qui tempora necessitatibus qui  repudiandae eum dolorem veniam et architecto Quis. Aut rerum aliquid et sapiente consequatur quo internos velit et minus quis hic officia autem. </p>
+                   <div class="bg-secondary text-light p-2">
+                        <form class="d-flex"> <!--dflex creates horizontal form vs vertical-->
+                            <!--form-control is a BS  form styling; type is for the form type; placeholder is a temp text for the form box; label is -->
+                            <input class="form-control me-2" type="search" placeholder="search" aria-label="search">
+                            <button class="btn btn-outline-light" type="submit">Search</button>
+                        </form>
                         
                    </div>
                    <!--RIGHT BOTTOM COLUMN-->
-                   <div class="bg-dark text-light h-50 mt-2 p-2 overflow-hidden"> <!--overflow hidden will save from content overflowing behind footer-->
-                        <p>Lorem ipsum dolor sit amet. Qui minima quia qui rerum voluptates qui tempora necessitatibus qui  repudiandae eum dolorem veniam et architecto Quis. Aut rerum aliquid et sapiente consequatur quo internos velit et minus quis hic officia autem. </p>
-                        <p>Lorem ipsum dolor sit amet. Qui minima quia qui rerum voluptates qui tempora necessitatibus qui  repudiandae eum dolorem veniam et architecto Quis. Aut rerum aliquid et sapiente consequatur quo internos velit et minus quis hic officia autem. </p>
-                       
+                   <div class="bg-dark text-light mt-2 p-2"> <!--overflow hidden will save from content overflowing behind footer-->
+                          <h5>More Articles</h5>
+                          <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Article One</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Article Two</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Article Three</a>
+                                </li>
+                          </ul>
                    </div>
-                   <div class="bg-dark text-light border border-top p-2">
-                       <button class="btn btn-light" type="button">Read more</button>
-                   </div>
-
                </div>
-
            </div>
        </div>
     </main>
